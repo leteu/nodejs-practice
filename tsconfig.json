@@ -8,9 +8,10 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "paths": {
-      "src/*": ["src/*"]
+      "src/*": ["src/*"],
+      "app/*": ["*"]
     },
-    "outDir": "ts-build",
+    "outDir": "./dist",
     "diagnostics": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -18,9 +19,11 @@
     "listEmittedFiles": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*.ts",
+    "src/**/*.tsx",
   ],
   "exclude": [
+    "./dist",
     "node_modules",
     "**/*.spec.ts",
     "**/*.spec.js"
