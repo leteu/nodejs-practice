@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "lib": [
+      "DOM",
+      "ES2021",
+      "ES2021.String",
+      "ES6"
+    ]
+  },
+  "include": [
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
