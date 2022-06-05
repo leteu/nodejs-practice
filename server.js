@@ -6,6 +6,10 @@ app.listen(8080, function() {
   console.log("listening on 8080")
 });
 
-app.get('/pet', function(request, response) {
+app.get('/', function(request, response) {
+  response.sendFile(__dirname + '/index.html')
+});
+
+app.get('/haha', function(request, response) {
   response.send('하하')
 });
